@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url(../img/tokyo.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1404px;
+	height: 800px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 5px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.chat {
+	display: grid;
+	grid-template-columns: 71.5px 261.5px 870px 201px;
+	height: 800px;
+}
+
+.nav-1 {
+	display: grid;
+	grid-column: 1;
+	background-color: black;
+	opacity: 0.8;
+	display: flex;
+}
+
+.choo {
+	display: flex;
+	height: 90%;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 10.5px 0 15.5px 0;
+}
+
+.dots {
+	margin: 0 0 5px 0;
+}
+
+
+.plus span{
+	align-self: flex-end;
+	background: #FFFFFF;
+	mix-blend-mode: normal;
+	opacity: 0.1;
+	box-shadow: -2px 0px 16px rgba(0, 0, 0, 0.16);
+	width: 41.5px;
+	height: 41.5px;
+}
+
+.nav-2 {
+	grid-column: 2;
+	background-color: black;
+	opacity: 0.7;
+}
+
+.center {
+	grid-column: 3;
+	background-color: white;
+}
+
+.profile {
+	grid-column: 4;
+	background-color: white;
+	opacity: 0.7;
+}
