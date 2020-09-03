@@ -12,9 +12,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: cover;
+ 	background-attachment: fixed;
 }
 
-main {
+/*main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,12 +24,13 @@ main {
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 5px solid rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
-}
+}*/
 
 .chat {
 	display: grid;
 	grid-template-columns: 71.5px 261.5px 870px 201px;
-	height: 800px;
+	height: auto;
+	overflow: hidden;
 }
 
 .nav-1 {
@@ -41,7 +43,7 @@ main {
 
 .choo {
 	display: flex;
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	flex-direction: column;
 	align-items: center;
@@ -49,18 +51,109 @@ main {
 }
 
 .dots {
-	margin: 0 0 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 52px;
+	height: 12px;
+	margin-bottom: 20px;
 }
 
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
 
-.plus span{
-	align-self: flex-end;
-	background: #FFFFFF;
-	mix-blend-mode: normal;
+.d1 {
+	background-color: red;
+}
+
+.d2 {
+	background-color: orange;
+}
+
+.d3 {
+	background-color: lime;
+}
+
+.buttons {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	width: 40px;
+}
+
+.butn {
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	margin-bottom: 20px;
+}
+
+.b1 {
+	background-image: url(../img/s1.png);
+}
+
+.b2 {
+	background-image: url(../img/s2.png);
+}
+
+.b3 {
+	background-image: url(../img/s3.png);
+}
+
+.b4 {
+	background-image: url(../img/s4.png);
+}
+
+.b5 {
+	background-image: url(../img/s5.png);
+}
+
+.b6 {
+	background-image: url(../img/s6.png);
+}
+
+.b7 {
+	background-image: url(../img/s7.png);
+}
+
+.bottom {
+	width: 100%;
+	height: 13%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.add {
+	margin-top: 301px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
 	opacity: 0.1;
-	box-shadow: -2px 0px 16px rgba(0, 0, 0, 0.16);
-	width: 41.5px;
-	height: 41.5px;
+}
+
+.add::before,.add::after{
+	position: absolute;
+	top: 50%
+	left: 50%;
+	content: '';
+	display: block;
+	height: 3px;
+	width: 13px;
+	background-color: grey;
+}
+
+.add::after{
+	transform: rotate(90deg);
 }
 
 .nav-2 {
@@ -68,6 +161,8 @@ main {
 	background-color: black;
 	opacity: 0.7;
 }
+
+
 
 .center {
 	grid-column: 3;
