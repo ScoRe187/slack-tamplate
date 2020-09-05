@@ -13,6 +13,7 @@ body {
 	background-position: right top;
 	background-size: cover;
  	background-attachment: fixed;
+ 	font-family: sans-serif;
 }
 
 .chat {
@@ -145,7 +146,7 @@ body {
 }
 
 .add {
-	margin-top: 301px;
+	margin-top: 320px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -177,7 +178,6 @@ body {
 	opacity: 0.7;
 }
 
-
 .lists {
 	margin-top: 35.5px;
 	display: flex;
@@ -194,12 +194,218 @@ body {
 	line-height: 24px;
 	font-size: 20px;
 	font-weight: bold;
+	margin-right: 5px;
+}
+
+.change {
+	width: 11.5px;
+	height: 7.5px;
+	opacity: 0.7;
+	margin-right: 70px;
+}
+
+.settings {
+	width: 16px;
+	height: 15.5px;
+	opacity: 0.6;
 }
 
 .treads{
 	width: 100%;
 	margin-top: 30px;
+	padding-left: 24px;
+	color: white;
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+	opacity: 0.5;
+	margin-right: 11px;
+}
+
+.all {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.channels-n {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30.5px;
 	padding-left: 23.5px;
+	padding-right: 25px;
+}
+
+.channel {
+	font-style: normal;
+	font-weight: bold;
+	margin-right: 137px;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height */
+	text-transform: uppercase;
+}
+
+.chchoo {
+	display: grid;
+	grid-template-columns: 90% 2%;
+}
+
+.channels {
+	grid-column: 1;
+	display: flex;
+	flex-direction: column;
+	margin-top: 14px;
+	margin-left: 23.5px;
+}
+
+.line1 {
+	grid-column: 2;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+.s-line1 {
+	width: 7px;
+	height: 141px;
+	color: grey;
+	border-radius: 3px;
+}
+
+.mained {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+}
+
+.channels span {
+	display: flex;
+	align-items: center;
+	width: 210px;
+	height: 30px;
+	padding-left: 13px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.friends-n {
+	margin-top: 10px;
+	padding-left: 23.5px;
+	padding-right: 25px;
+}
+
+.friend {
+	margin-right: 134.5px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height */
+	text-transform: uppercase;
+}
+
+.friends {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-left: 22px;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+.online {
+	background-color: lime;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.offline {
+	background-color: grey;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.ph1 {
+	background-image: url(../img/orlando.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.ph2 {
+	background-image: url(../img/carmen.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.ph3 {
+	background-image: url(../img/marie.jpg);
+	background-size: cover;
+	background-position: left center;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.ph4 {
+	background-image: url(../img/alex.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.ph5 {
+	background-image: url(../img/leo.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.ph6 {
+	background-image: url(../img/britney.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.u-n {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+	color: #B5B5B5;
 }
 
 .center {
@@ -209,6 +415,137 @@ body {
 
 .profile {
 	grid-column: 4;
-	background-color: white;
-	opacity: 0.7;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-ph {
+	width: 201px;
+	height: 201px;
+	background-image: url(../img/profile.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.user-data {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.pr-u-n {
+	margin-top: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.pr-n {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: black;
+}
+
+.status {
+	background-color: lime;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	margin-left: 6px;
+}
+
+.profile-dir {
+	margin-top: 3.5px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height */
+	color: #5F6164;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.ico {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #E8E8EB;
+	margin-right: 7px;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+}
+
+.icons i {
+	color: rgba(0,0,0,0.5);
+}
+
+.message {
+	margin-top: 23px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.mes {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	/* identical to box height */
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #3577EF;
+	border-radius: 3px;
+	padding: 5px 41px;
+	margin-right: 3px;
+}
+
+.cd	{
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #3577EF;
+	border-radius: 3px;
+	padding: 4px 6.5px;
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+	margin-top: 14px;
+}
+
+.tag1 {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	color: #5F6164;
+}
+
+.tag {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	color: #5F6164;
+	margin-top: 17px;
+}
+
+.t-conf {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+	color: #000000;
+	margin-top: 2px;
 }
