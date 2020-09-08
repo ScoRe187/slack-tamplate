@@ -20,7 +20,7 @@ body {
 .chat {
 	display: grid;
 	grid-template-columns: 71.5px 261.5px 870px 201px;
-	height: auto;
+	max-height: 801px;
 	overflow: hidden;
 }
 
@@ -238,7 +238,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 30.5px;
+	margin-top: 32px;
 	padding-left: 23.5px;
 	padding-right: 25px;
 }
@@ -249,7 +249,6 @@ body {
 	margin-right: 137px;
 	font-size: 12px;
 	line-height: 14px;
-	/* identical to box height */
 	text-transform: uppercase;
 }
 
@@ -318,14 +317,14 @@ body {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	margin-top: 10px;
+	margin-top: 19px;
 	padding-left: 22px;
 }
 
 .user {
 	display: flex;
 	align-items: center;
-	height: 50px;
+	height: 41px;
 }
 
 .online {
@@ -420,10 +419,11 @@ body {
 
 .top {
 	box-sizing: border-box;
-	height: 33px;
+	height: 79px;
 	width: 100%;
 	padding-left: 22.5px;
-	margin-top: 31.5px;
+	padding-top: 31.5px;
+	padding-bottom: 14.5px;
 	display: flex;
 	align-items: center;
 }
@@ -559,14 +559,17 @@ hr {
 	width: 100%;
 	height: 1px;
 	background-color: rgba(0,0,0,0.24);
-	margin-top: 14.5px;
 	border: none;
 }
 
 .messages {
+	position: relative;
 	box-sizing: border-box;
 	width: 100%;
 	padding-left: 22.5px;
+	height: 645.5px;
+	padding-top: 18.5px;
+	padding-bottom: 19.8px;
 }
 
 .mes1 {
@@ -574,7 +577,6 @@ hr {
 	width: 100%;
 	height: 36px;
 	display: flex;
-	margin-top: 18.5px;
 }
 
 .mesCont1 {
@@ -763,7 +765,7 @@ hr {
 	width: 100%;
 	height: 268.5;
 	display: flex;
-	margin-top: 18.5px;
+	margin-top: 9.3px;
 }
 
 .mesCont3 {
@@ -815,7 +817,7 @@ hr {
 	width: 100%;
 	height: 36px;
 	display: flex;
-	margin-top: 18.5px;
+	margin-top: 9.3px;
 }
 
 .mesCont4 {
@@ -852,7 +854,7 @@ hr {
 	width: 100%;
 	height: 77.2px;
 	display: flex;
-	margin-top: 18.5px;
+	margin-top: 9.3px;
 }
 
 .mesCont5 {
@@ -862,7 +864,6 @@ hr {
 	justify-content: flex-start;
 	align-items: flex-start;
 	margin-left: 10px;
-	margin-bottom: 19.8px;
 }
 
 .chatMes5 {
@@ -877,6 +878,17 @@ hr {
 	line-height: 20px;
 }
 
+.scroll {
+	position: absolute;
+	width: 7px;
+	height: 206px;
+	background: #000000;
+	opacity: 0.2;
+	bottom: 19.8px;
+	right: 6.5px;
+	border-radius: 3px;
+}
+
 .usedInM {
 	box-sizing: border-box;
 	margin-top: 2px;
@@ -888,7 +900,7 @@ hr {
 }
 
 .hr5 {
-	margin-top: 60px;
+	margin-top: 0;
 }
 
 .mesIn {
@@ -897,9 +909,10 @@ hr {
 	float: row;
 	box-sizing: border-box;
 	padding-left: 23px;
+	padding-right: 23px;
 	height: 71.5px;
 	background: #fff;
-	width: 100%;
+	width: 870px;
 }
 
 .skrepka {
